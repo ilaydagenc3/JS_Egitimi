@@ -20,13 +20,15 @@
 
 //console.log(myMap);
 
+//map boyutu
+
 //console.log(myMap.size);
 
-const cities = new Map();
+// const cities = new Map();
 
-cities.set("Ankara",5);
-cities.set("İstanbul",15);
-cities.set("İzmir",4);
+// cities.set("Ankara",5);
+// cities.set("İstanbul",15);
+// cities.set("İzmir",4);
 
 // for each
 
@@ -34,6 +36,39 @@ cities.set("İzmir",4);
 //     console.log(key,value);
 // })
 
-for(let [key,value] of cities){
-    console.log(key,value);
-}
+//for of
+
+// for(let [key,value] of cities){
+//     console.log(key,value);
+// }
+
+// map keys
+
+// for(let key of cities.keys()){
+//     console.log(key);
+// }
+
+// map values
+
+// for(let value of cities.values()){
+//     console.log(value);
+// }
+
+// arraylerden map oluşturma
+// const array = [["key1","value1"],["key2","value2"]];
+
+// const lastMap = new Map(array);
+
+// console.log(lastMap);
+
+//maplerden array oluşturma
+
+const cities = new Map();
+
+cities.set("Ankara",5);
+cities.set("İstanbul",15);
+cities.set("İzmir",4);
+
+const array = Array.from(cities);
+// [["Ankara",5],["İstanbul",15],["İzmir",4]]
+console.log(array);
